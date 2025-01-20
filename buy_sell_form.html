@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy/Sell Crypto</title>
+  <!-- Link the CSS file -->
+  <link rel="stylesheet" href="buy_sell.css">
+</head>
+<body>
+  <header>
+    <h1>Buy / Sell Crypto</h1>
+  </header>
+
+  <main>
+    <section class="buy-sell-container">
+      <form id="buy-sell-form" method="POST" action="buy_sell.php">
+        <div class="form-group">
+          <label for="coin">Select Coin</label>
+          <select name="coin" id="coin">
+            <option value="BTC">BTC</option>
+            <option value="ETH">ETH</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Type</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="type" value="buy" checked>
+              Buy
+            </label>
+            <label>
+              <input type="radio" name="type" value="sell">
+              Sell
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Amount (Coins)</label>
+          <input type="number" step="0.0001" name="amount" id="amount" required>
+        </div>
+
+        <div class="form-group">
+          <label for="displayPrice">Current Price (USDT)</label>
+          <input type="text" id="displayPrice" readonly>
+        </div>
+        
+        <!-- Hidden field to submit the price to PHP -->
+        <input type="hidden" name="price" id="price">
+        
+        <div class="form-group">
+          <label for="totalDisplay">Total (USDT)</label>
+          <input type="text" id="totalDisplay" readonly>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Order</button>
+      </form>
+
+      <a href="dashboard.php" class="back-btn">Back to Dashboard</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Crypto Dashboard</p>
+  </footer>
+
+  <!-- Script to fetch Binance price & update totals -->
+  <script src="buy_sell.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.jpg');  
+    background-size: cover; 
+    background-position: center;  
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* General Text Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.6);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0.5rem 0;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styling */
+button {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0052cc;  
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #003d99;
+    transform: scale(1.05);
+}
+
+/* Form Input */
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #0052cc;
+    outline: none;
+    box-shadow: 0px 0px 6px rgba(0, 82, 204, 0.5);
+}
