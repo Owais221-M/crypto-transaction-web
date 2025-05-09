@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // --- 1. Database connection ---
     $servername = "localhost";
     $username   = "root";
-    $password   = "Ansari_221";
+    $password   = "Pasword";
     $dbname     = "crypto_transaction";
 
     $conn = new mysqli($servername, $username, $password, $dbname);
