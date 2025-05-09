@@ -13,7 +13,7 @@ error_reporting(E_ALL);
 // 2. Connect to the database
 $servername = "localhost";
 $username   = "root";
-$password   = "Ansari_221";
+$password   = "password";
 $dbname     = "crypto_transaction";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
