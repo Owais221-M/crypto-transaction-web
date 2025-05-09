@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "Ansari_221"; 
+$password = "password"; 
 $dbname = "crypto_transaction";
 
 // Create connection
