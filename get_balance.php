@@ -10,7 +10,7 @@ if (!isset($_SESSION['id'])) {
 // Database credentials
 $host = 'localhost';
 $user = 'root';
-$password = 'Ansari_221';
+$password = 'password';
 $dbname = 'crypto_transaction';
 
 // Connect to MySQL
