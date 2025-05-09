@@ -1,7 +1,7 @@
 <?php
 $host = 'localhost'; // or your server IP
 $user = 'root'; // your MySQL username
-$password = 'Ansari_221'; // your MySQL password
+$password = 'password'; // your MySQL password
 $dbname = 'crypto_transaction'; // your database name
 
 // Create connection
